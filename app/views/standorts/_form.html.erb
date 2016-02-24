@@ -1,0 +1,25 @@
+<%= form_for(@standort) do |f| %>
+  <% if @standort.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@standort.errors.count, "error") %> prohibited this standort from being saved:</h2>
+
+      <ul>
+      <% @standort.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Adresse %><br>
+    <%= f.text_field :Adresse %>
+  </div>
+  <div class="field">
+    <%= f.label :Oeffnungszeiten %><br>
+    <%= f.text_field :Oeffnungszeiten %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

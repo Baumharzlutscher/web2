@@ -1,0 +1,29 @@
+<%= form_for(@warenkorb) do |f| %>
+  <% if @warenkorb.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@warenkorb.errors.count, "error") %> prohibited this warenkorb from being saved:</h2>
+
+      <ul>
+      <% @warenkorb.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Anzahl %><br>
+    <%= f.number_field :Anzahl %>
+  </div>
+  <div class="field">
+    <%= f.label :Rabattcode %><br>
+    <%= f.text_field :Rabattcode %>
+  </div>
+  <div class="field">
+    <%= f.label :Gesamtbetrag %><br>
+    <%= f.number_field :Gesamtbetrag %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

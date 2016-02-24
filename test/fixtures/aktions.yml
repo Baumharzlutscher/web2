@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Monat: MyString
+  Name: MyString
+  Rabatt: 1.5
+
+two:
+  Monat: MyString
+  Name: MyString
+  Rabatt: 1.5

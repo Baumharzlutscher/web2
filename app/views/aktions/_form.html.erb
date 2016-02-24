@@ -1,0 +1,29 @@
+<%= form_for(@aktion) do |f| %>
+  <% if @aktion.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@aktion.errors.count, "error") %> prohibited this aktion from being saved:</h2>
+
+      <ul>
+      <% @aktion.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Monat %><br>
+    <%= f.text_field :Monat %>
+  </div>
+  <div class="field">
+    <%= f.label :Name %><br>
+    <%= f.text_field :Name %>
+  </div>
+  <div class="field">
+    <%= f.label :Rabatt %><br>
+    <%= f.text_field :Rabatt %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

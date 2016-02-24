@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Monat:</strong>
+  <%= @aktion.Monat %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @aktion.Name %>
+</p>
+
+<p>
+  <strong>Rabatt:</strong>
+  <%= @aktion.Rabatt %>
+</p>
+
+<%= link_to 'Edit', edit_aktion_path(@aktion) %> |
+<%= link_to 'Back', aktions_path %>

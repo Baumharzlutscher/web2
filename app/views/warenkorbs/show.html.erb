@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Anzahl:</strong>
+  <%= @warenkorb.Anzahl %>
+</p>
+
+<p>
+  <strong>Rabattcode:</strong>
+  <%= @warenkorb.Rabattcode %>
+</p>
+
+<p>
+  <strong>Gesamtbetrag:</strong>
+  <%= @warenkorb.Gesamtbetrag %>
+</p>
+
+<%= link_to 'Edit', edit_warenkorb_path(@warenkorb) %> |
+<%= link_to 'Back', warenkorbs_path %>

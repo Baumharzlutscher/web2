@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Standorts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Adresse</th>
+      <th>Oeffnungszeiten</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @standorts.each do |standort| %>
+      <tr>
+        <td><%= standort.Adresse %></td>
+        <td><%= standort.Oeffnungszeiten %></td>
+        <td><%= link_to 'Show', standort %></td>
+        <td><%= link_to 'Edit', edit_standort_path(standort) %></td>
+        <td><%= link_to 'Destroy', standort, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Standort', new_standort_path %>

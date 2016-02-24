@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Name: MyString
+  Preis: 1.5
+  Bearbeitungszeit: 1
+  Produktgruppe: MyString
+
+two:
+  Name: MyString
+  Preis: 1.5
+  Bearbeitungszeit: 1
+  Produktgruppe: MyString

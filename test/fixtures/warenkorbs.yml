@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Anzahl: 1
+  Rabattcode: MyString
+  Gesamtbetrag: 1
+
+two:
+  Anzahl: 1
+  Rabattcode: MyString
+  Gesamtbetrag: 1

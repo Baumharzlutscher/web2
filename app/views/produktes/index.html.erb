@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Produktes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Preis</th>
+      <th>Bearbeitungszeit</th>
+      <th>Produktgruppe</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @produktes.each do |produkte| %>
+      <tr>
+        <td><%= produkte.Name %></td>
+        <td><%= produkte.Preis %></td>
+        <td><%= produkte.Bearbeitungszeit %></td>
+        <td><%= produkte.Produktgruppe %></td>
+        <td><%= link_to 'Show', produkte %></td>
+        <td><%= link_to 'Edit', edit_produkte_path(produkte) %></td>
+        <td><%= link_to 'Destroy', produkte, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Produkte', new_produkte_path %>

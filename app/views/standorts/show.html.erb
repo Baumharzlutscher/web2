@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Adresse:</strong>
+  <%= @standort.Adresse %>
+</p>
+
+<p>
+  <strong>Oeffnungszeiten:</strong>
+  <%= @standort.Oeffnungszeiten %>
+</p>
+
+<%= link_to 'Edit', edit_standort_path(@standort) %> |
+<%= link_to 'Back', standorts_path %>
