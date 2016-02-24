@@ -1,28 +1,10 @@
 Rails.application.routes.draw do
   resources :aktions
-  resources :standorts
-  resources :standorts
-  resources :standorts
-  resources :warenkorbs
-  resources :standorts
-  resources :aktions
   resources :produktes
   resources :warenkorbs
-  resources :warenkorbs
-  resources :warenkorbs
-  resources :produktes
-  resources :produktes
-  resources :aktions
-  resources :warenkorbs
-  resources :aktions
   resources :standorts
   resources :accounts
-  resources :produktes
-  resources :warenkorbs
-  resources :produktes
-  resources :warenkorbs
-  resources :produktes
-  resources :accounts
+
   get 'pages/about'
 
   #get 'pages/home'
